@@ -7,18 +7,37 @@
 
 This npm package contains a few sorting algorithms to sort arrays of numbers.
 
-## Quicksort
+## Quick Sort
 
 ```js
-const { quicksort } = require('js-sort');
+const { quickSort } = require('@philskat/js-sort');
 
-const arr = quicksort([3, 1, 2]);
+const arr = quickSort([3, 1, 2]); // Output: [1, 2, 3]
 ```
 
-## Bubblesort
+## Bubble Sort
 
 ```js
-const { bubblesort } = require('js-sort');
+const { bubbleSort } = require('@philskat/js-sort');
 
-const arr = bubblesort([3, 1, 2]);
+const arr = bubbleSort([3, 1, 2]); // Output: [1, 2, 3]
+```
+
+## Insertion Sort
+
+```js
+const { insertionSort } = require('@philskat/js-sort');
+
+const arr = insertionSort([3, 1, 2]); // Output: [1, 2, 3]
+```
+
+## Insert Sorted
+
+Add a new entry to an array and sort that entry in the array.
+
+```js
+const { insertSorted } = require('@philskat/js-sort');
+const arr = [1, 2, 4, 5];
+
+arr = insertSorted(arr, 3); // Output: [1, 2, 3, 4, 5]
 ```
