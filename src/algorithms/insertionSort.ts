@@ -2,7 +2,7 @@
  * Insert an element into an sorted array
  *
  * @param arr Sorted array the element should be injected into
- * @param val value that should be inserted
+ * @param val Value that should be inserted
  * @returns Sorted array with the new value
  */
 export function insertSorted(arr: number[], val: number): number[] {
