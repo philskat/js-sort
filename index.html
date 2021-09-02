@@ -1,0 +1,142 @@
+<!doctype html>
+<html class="default no-js">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>@philskat/js-sort</title>
+	<meta name="description" content="Documentation for @philskat/js-sort">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="assets/css/main.css">
+	<script async src="assets/js/search.js" id="search-script"></script>
+</head>
+<body>
+<header>
+	<div class="tsd-page-toolbar">
+		<div class="container">
+			<div class="table-wrap">
+				<div class="table-cell" id="tsd-search" data-index="assets/js/search.json" data-base=".">
+					<div class="field">
+						<label for="tsd-search-field" class="tsd-widget search no-caption">Search</label>
+						<input id="tsd-search-field" type="text" />
+					</div>
+					<ul class="results">
+						<li class="state loading">Preparing search index...</li>
+						<li class="state failure">The search index is not available</li>
+					</ul>
+					<a href="index.html" class="title">@philskat/js-sort</a>
+				</div>
+				<div class="table-cell" id="tsd-widgets">
+					<div id="tsd-filter">
+						<a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a>
+						<div class="tsd-filter-group">
+							<div class="tsd-select" id="tsd-filter-visibility">
+								<span class="tsd-select-label">All</span>
+								<ul class="tsd-select-list">
+									<li data-value="public">Public</li>
+									<li data-value="protected">Public/Protected</li>
+									<li data-value="private" class="selected">All</li>
+								</ul>
+							</div>
+							<input type="checkbox" id="tsd-filter-inherited" checked />
+							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
+							<input type="checkbox" id="tsd-filter-externals" checked />
+							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+						</div>
+					</div>
+					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="tsd-page-title">
+		<div class="container">
+			<h1>@philskat/js-sort</h1>
+		</div>
+	</div>
+</header>
+<div class="container container-main">
+	<div class="row">
+		<div class="col-8 col-content">
+			<div class="tsd-panel tsd-typography">
+				<p><a href="https://github.com/philskat/js-sort/actions/workflows/npm-ci.yml"><img src="https://github.com/philskat/js-sort/workflows/Node.js%20CI/badge.svg" alt="Node.js CI"></a>
+					<a href="https://bundlephobia.com/result?p=@philskat/js-sort"><img src="https://img.shields.io/bundlephobia/min/@philskat/js-sort" alt="npm bundle size"></a>
+					<a href="https://www.npmjs.com/package/@philskat/js-sort"><img src="https://img.shields.io/npm/v/@philskat/js-sort" alt="npm"></a>
+					<a href="https://gitpod.io/#https://github.com/philskat/js-sort"><img src="https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod" alt="Gitpod ready-to-code"></a>
+				<a href="https://philskat.github.io/js-sort"><img src="https://img.shields.io/badge/docs-here-green" alt="Docs"></a></p>
+				<a href="#js-sort" id="js-sort" style="color: inherit; text-decoration: none;">
+					<h1>js-sort</h1>
+				</a>
+				<p>This npm package contains a few sorting algorithms to sort arrays of numbers.</p>
+				<a href="#quick-sort" id="quick-sort" style="color: inherit; text-decoration: none;">
+					<h2>Quick Sort</h2>
+				</a>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">quickSort</span><span style="color: #000000"> } = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;@philskat/js-sort&#039;</span><span style="color: #000000">);</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">arr</span><span style="color: #000000"> = </span><span style="color: #795E26">quickSort</span><span style="color: #000000">([</span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">]); </span><span style="color: #008000">// Output: [1, 2, 3]</span>
+</code></pre>
+				<a href="#bubble-sort" id="bubble-sort" style="color: inherit; text-decoration: none;">
+					<h2>Bubble Sort</h2>
+				</a>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">bubbleSort</span><span style="color: #000000"> } = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;@philskat/js-sort&#039;</span><span style="color: #000000">);</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">arr</span><span style="color: #000000"> = </span><span style="color: #795E26">bubbleSort</span><span style="color: #000000">([</span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">]); </span><span style="color: #008000">// Output: [1, 2, 3]</span>
+</code></pre>
+				<a href="#insertion-sort" id="insertion-sort" style="color: inherit; text-decoration: none;">
+					<h2>Insertion Sort</h2>
+				</a>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">insertionSort</span><span style="color: #000000"> } = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;@philskat/js-sort&#039;</span><span style="color: #000000">);</span>
+
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">arr</span><span style="color: #000000"> = </span><span style="color: #795E26">insertionSort</span><span style="color: #000000">([</span><span style="color: #098658">3</span><span style="color: #000000">, </span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">]); </span><span style="color: #008000">// Output: [1, 2, 3]</span>
+</code></pre>
+				<a href="#insert-sorted" id="insert-sorted" style="color: inherit; text-decoration: none;">
+					<h2>Insert Sorted</h2>
+				</a>
+				<p>Add a new entry to an array and sort that entry in the array.</p>
+				<pre><code class="language-js"><span style="color: #0000FF">const</span><span style="color: #000000"> { </span><span style="color: #0070C1">insertSorted</span><span style="color: #000000"> } = </span><span style="color: #795E26">require</span><span style="color: #000000">(</span><span style="color: #A31515">&#039;@philskat/js-sort&#039;</span><span style="color: #000000">);</span>
+<span style="color: #0000FF">const</span><span style="color: #000000"> </span><span style="color: #0070C1">arr</span><span style="color: #000000"> = [</span><span style="color: #098658">1</span><span style="color: #000000">, </span><span style="color: #098658">2</span><span style="color: #000000">, </span><span style="color: #098658">4</span><span style="color: #000000">, </span><span style="color: #098658">5</span><span style="color: #000000">];</span>
+
+<span style="color: #001080">arr</span><span style="color: #000000"> = </span><span style="color: #795E26">insertSorted</span><span style="color: #000000">(</span><span style="color: #001080">arr</span><span style="color: #000000">, </span><span style="color: #098658">3</span><span style="color: #000000">); </span><span style="color: #008000">// Output: [1, 2, 3, 4, 5]</span>
+</code></pre>
+			</div>
+		</div>
+		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+				</ul>
+			</nav>
+			<nav class="tsd-navigation secondary menu-sticky">
+				<ul class="before-current">
+					<li class=" tsd-kind-function">
+						<a href="modules.html#bubbleSort" class="tsd-kind-icon">bubble<wbr>Sort</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#insertSorted" class="tsd-kind-icon">insert<wbr>Sorted</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#insertionSort" class="tsd-kind-icon">insertion<wbr>Sort</a>
+					</li>
+					<li class=" tsd-kind-function">
+						<a href="modules.html#quickSort" class="tsd-kind-icon">quick<wbr>Sort</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+</div>
+<footer class="with-border-bottom">
+	<div class="container">
+		<h2>Legend</h2>
+		<div class="tsd-legend-group">
+		</div>
+	</div>
+</footer>
+<div class="container tsd-generator">
+	<p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p>
+</div>
+<div class="overlay"></div>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
