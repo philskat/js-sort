@@ -35,6 +35,12 @@ function partition(arr: number[], left: number, right: number) {
   return i;
 }
 
+/**
+ * Sorts an array of numbers with the quick sort algorithm
+ *
+ * @param arr Input array of numbers
+ * @returns Sorted array of numbers
+ */
 export function quickSort(arr: number[]): number[] {
   const tmp = [...arr];
   return quickSortHelper(tmp, 0, arr.length - 1);

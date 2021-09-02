@@ -1,3 +1,9 @@
+/**
+ * Sorts an array of numbers with the bubble sort algorithm
+ *
+ * @param arr Input array of numbers
+ * @returns Sorted array of numbers
+ */
 export function bubbleSort(arr: number[]): number[] {
   const result = [...arr];
   for (let i = result.length; i > 0; i--) {
